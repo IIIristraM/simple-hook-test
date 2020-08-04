@@ -1,3 +1,16 @@
 {
-    "pull_request": "./test.sh"
+    "jobs": [
+        {
+            "id": "test-job",
+            "events": [
+                {
+                    "id": "pull_request",
+                    "actions": [
+                        "edit"
+                    ]
+                }
+            ],
+            "command": "./test.sh"
+        }
+    ]
 }
