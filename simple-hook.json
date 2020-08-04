@@ -10,7 +10,10 @@
                     ]
                 }
             ],
-            "command": "./test.sh"
+            "command": "./test.sh",
+            "env": {
+                "REPO_NAME": "${{ repository.name }}"
+            }
         }
     ]
 }
